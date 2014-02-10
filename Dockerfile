@@ -10,4 +10,4 @@ RUN pear install pear.phpqatools.org/phpqatools
 RUN echo "suhosin.executor.include.whitelist = phar" | tee -a /etc/php5/cli/conf.d/99_erunner.ini
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin
 
-RUN apt-get install openjdk-7-jdk
+RUN apt-get -qy install openjdk-7-jdk
